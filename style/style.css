@@ -5,4 +5,27 @@
 }
 body{
     background-color: rgba(0, 0, 255, 0.233) ;
+    text-align: center;
 }
+
+.img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: movimentoInfinito 3s  infinite;
+}
+
+
+@keyframes movimentoInfinito {
+    0% {
+      transform: translateX(-100px);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+  }
